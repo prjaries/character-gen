@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Project Aries CGEN</title>
+  <style>
+    @font-face {
+      font-family: Aptos-Light;
+      src: url(aptos.ttf);
+    }
+
+    @font-face {
+      font-family: "Aptos-Black";
+      src: url(arial-nova-condensed.ttf);
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .container {
+      animation: fadeIn 0.25s linear;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .container.none {
+      display: none
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .container.title {
+      float: left;
+      white-space: nowrap;
+    }
+
+    .container.marquee {
+      float: left;
+    }
+  </style>
+</head>
+
+<body style="background-color:green;">
+  <div class="alert">
+  </div>
+  <script src="cg.js"></script>
+</body>
+
+</html>
